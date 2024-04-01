@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to bottom, #333, #222);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border: 5px solid #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(to bottom, #333, #222);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Grid Layout for Work Experience */
+section#work ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+section#work ul li {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 8px solid #3498db; /* Add a left border for color */
+}
+
+section#work ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9; /* Change background color on hover */
+    border-color: #e74c3c; /* Change border color on hover */
+}
+
+/* Additional styling for the text */
+section#work ul li h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+section#work ul li p {
+    color: #666;
+}
